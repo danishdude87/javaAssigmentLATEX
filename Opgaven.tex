@@ -56,6 +56,26 @@
 	%laver forside og indholsfortegnelse
 	
 	\newpage
+	
+	\Section{Introduction}
+	Introduction:
+Tic-Tac-Toe is a simple board game traditionally played by 2 players on a 3x3 grid. However, our Tic-Tac-Toe game must be implemented with towards 6 players and a 7x7 grid. The players alternate in placing a mark on one of unmarked fields. A player wins as soon as any of the rows, columns, or diagonals contain 3 of his or her marks in a row. The game is a draw, if no player wins and all 9-49 fields have been marked. The winning condition is the same, i.e., the first player to put 3 marks in a row, column, or diagonal wins. 
+Connect four is kind of and extension of Tic-Tac-Toe the few differences between them is that size of grid is standard 7 rows and 6 columns, however some people variate includes 8×7, 9×7, 10×7 grid. Only two players and that you must have four in a row, column or diagonal. The main difference from Tic-Tac-Toe is that when you click on a tile in the game, the mark is made in the lowest free position of that column. The last difference with respect to the user interface is that the board is rectangular.
+When people play an ordinary Tic-Tac-Toe game, what often happens is that almost every game will come out a tie. Both players can probably play perfectly without making a mistake that would allow the opponent to win. Probably, most people aren’t even aware of alternate possibilities, you just instinctively know where to move. However, it is a very different story when it comes to artificial intelligent. And yet the computer must know very explicitly and algorithm or strategy. 
+The strategy/Algorithm:
+There are a lot of ways to implement strategy in Tic-Tac-Toe and here is one of them. The algorithm needs to know the highest and lowest priority in the rules. 
+The highest rules:
+1. If the player can win on this move, do it. 
+2. If the other player can win on the next move, block that winning square.
+3. If player can make a move that will set up a fork for myself, do it.
+The lowest rules:
+4. n-2 Take the center square if it’s free.
+5. n-1. Take a corner square if one is free. 
+6. n. Take whatever is available.
+In these 6 rules of strategy there is a correlation between offense and defense. For example, the first rule are offense and second rule are defense. It is the same with rule 3 and 4. 
+The second way is the Minimax algorithm that we implemented in our own artificial intelligence. The way it works is that each position has a value based on how good likely it was that it would lead to a win or at least a draw. If the next position is a winning move the position has a value worth 100. If the other position is a loss position it has a value of 79. The last two are if the positions are marked by AI is worth -10 and 10 if it is your mark. 
+
+	
 	\section{Specification} 
 	
 	
