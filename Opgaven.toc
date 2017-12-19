@@ -1,15 +1,48 @@
 \select@language {danish}
-\contentsline {section}{\numberline {1}Specification}{2}
-\contentsline {section}{\numberline {2}Design}{2}
-\contentsline {subsection}{\numberline {2.1}checkFull() by turnCounter()}{2}
-\contentsline {subsection}{\numberline {2.2}checkWinning() by math}{2}
-\contentsline {subsection}{\numberline {2.3}GUI}{3}
-\contentsline {section}{\numberline {3}Implementation}{3}
-\contentsline {subsection}{\numberline {3.1}checkFull() by turnCounter()}{3}
-\contentsline {subsection}{\numberline {3.2}checkWinning() by math}{3}
-\contentsline {subsection}{\numberline {3.3}GUI}{3}
-\contentsline {section}{\numberline {4}Testing}{4}
-\contentsline {subsection}{\numberline {4.1}checkFull() and the GUI}{4}
-\contentsline {subsection}{\numberline {4.2}checkWinning() by math}{4}
-\contentsline {section}{\numberline {5}Conclusion}{4}
-\contentsline {section}{\numberline {6}Appendix (source code)}{5}
+\contentsline {section}{\numberline {1}Introduction to Tic-Tac-Toe}{3}
+\contentsline {section}{\numberline {2}Specification for Tic-Tac-Toe}{4}
+\contentsline {subsection}{\numberline {2.1}Checkboundaries()}{4}
+\contentsline {subsection}{\numberline {2.2}Shift()}{4}
+\contentsline {subsection}{\numberline {2.3}isFree()}{4}
+\contentsline {subsection}{\numberline {2.4}getPlayer()}{4}
+\contentsline {subsection}{\numberline {2.5}addMove()}{4}
+\contentsline {subsection}{\numberline {2.6}checkFull()}{4}
+\contentsline {subsection}{\numberline {2.7}checkWinning()}{4}
+\contentsline {subsection}{\numberline {2.8}checkSequence()}{4}
+\contentsline {subsection}{\numberline {2.9}Artificial intelligence for Tic Tac Toe}{4}
+\contentsline {subsection}{\numberline {2.10}App for Android}{4}
+\contentsline {subsection}{\numberline {2.11}Graphical user interface}{5}
+\contentsline {section}{\numberline {3}Design of Tic-Tac-Toe}{5}
+\contentsline {subsection}{\numberline {3.1}Checkboundaries()}{5}
+\contentsline {subsection}{\numberline {3.2}Shift()}{5}
+\contentsline {subsection}{\numberline {3.3}isFree()}{5}
+\contentsline {subsection}{\numberline {3.4}getPlayer()}{5}
+\contentsline {subsection}{\numberline {3.5}addMove()}{5}
+\contentsline {subsection}{\numberline {3.6}checkFull()}{5}
+\contentsline {subsection}{\numberline {3.7}checkFull() by turnCounter()}{5}
+\contentsline {subsection}{\numberline {3.8}checkWinning()}{6}
+\contentsline {subsection}{\numberline {3.9}checkWinning() by math}{6}
+\contentsline {subsection}{\numberline {3.10}checkSequence()}{6}
+\contentsline {subsection}{\numberline {3.11}Artificial intelligence for Tic Tac Toe}{6}
+\contentsline {subsection}{\numberline {3.12}App for Android}{6}
+\contentsline {subsection}{\numberline {3.13}Graphical user interface}{6}
+\contentsline {section}{\numberline {4}Implementation of Tic-Tac-Toe}{6}
+\contentsline {subsection}{\numberline {4.1}Checkboundaries()}{6}
+\contentsline {subsection}{\numberline {4.2}Shift()}{7}
+\contentsline {subsection}{\numberline {4.3}isFree()}{7}
+\contentsline {subsection}{\numberline {4.4}getPlayer()}{7}
+\contentsline {subsection}{\numberline {4.5}addMove()}{7}
+\contentsline {subsection}{\numberline {4.6}checkFull()}{7}
+\contentsline {subsection}{\numberline {4.7}checkFull() by turnCounter()}{7}
+\contentsline {subsection}{\numberline {4.8}checkWinning()}{7}
+\contentsline {subsection}{\numberline {4.9}checkWinning() by math}{8}
+\contentsline {subsection}{\numberline {4.10}checkSequence()}{8}
+\contentsline {subsection}{\numberline {4.11}Artificial intelligence for Tic Tac Toe}{8}
+\contentsline {subsection}{\numberline {4.12}App for Android}{8}
+\contentsline {subsection}{\numberline {4.13}Graphical user interface}{8}
+\contentsline {section}{\numberline {5}Testing Tic-Tac-Toe}{9}
+\contentsline {subsection}{\numberline {5.1}checkFull() and the GUI}{9}
+\contentsline {subsection}{\numberline {5.2}checkWinning() by math}{9}
+\contentsline {section}{\numberline {6}Conclusion}{9}
+\contentsline {subsection}{\numberline {6.1}turncounter holding arear for now}{9}
+\contentsline {section}{\numberline {7}Appendix (source code)}{11}
