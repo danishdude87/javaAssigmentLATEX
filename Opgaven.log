@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  13 DEC 2017 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  19 DEC 2017 19:10
 entering extended mode
 **./Opgaven.tex
 (Opgaven.tex
@@ -614,36 +614,53 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 69.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 89.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Excluding 'comment' comment. [2] Excluding 'comment' comment. [3] (Opgaven.aux)
- ) 
+
+! Package inputenc Error: Unicode char ´ (U+B4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...nd calls checkWinning() after player one´
+                                                  s turn incrementing turnCo...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3] Excluding 'comment' comment. [4] Excluding 'comment' comment. [5]
+(Opgaven.aux) ) 
 Here is how much of TeX's memory you used:
- 5692 strings out of 493323
- 72667 string characters out of 3139063
- 165180 words of memory out of 3000000
- 9125 multiletter control sequences out of 15000+200000
- 14741 words of font info for 41 fonts, out of 3000000 for 9000
+ 5705 strings out of 493323
+ 72800 string characters out of 3139063
+ 172147 words of memory out of 3000000
+ 9135 multiletter control sequences out of 15000+200000
+ 17216 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,7n,42p,235b,1293s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ectt0900.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecrm0800.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\Flindt\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Flindt\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\
-Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk>
-Output written on Opgaven.pdf (3 pages, 52368 bytes).
+ 39i,7n,42p,1195b,1293s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ectt0900.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Flindt\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Flindt\Ap
+pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\User
+s\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.p
+k> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecrm1200.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ecrm1728.pk>
+Output written on Opgaven.pdf (5 pages, 86972 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
+ 273 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
