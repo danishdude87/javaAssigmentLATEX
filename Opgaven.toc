@@ -34,15 +34,15 @@
 \contentsline {subsection}{\numberline {4.5}addMove()}{7}
 \contentsline {subsection}{\numberline {4.6}checkFull()}{7}
 \contentsline {subsection}{\numberline {4.7}checkFull() by turnCounter()}{7}
-\contentsline {subsection}{\numberline {4.8}checkWinning()}{7}
+\contentsline {subsection}{\numberline {4.8}checkWinning()}{8}
 \contentsline {subsection}{\numberline {4.9}checkWinning() by math}{8}
 \contentsline {subsection}{\numberline {4.10}checkSequence()}{8}
-\contentsline {subsection}{\numberline {4.11}Artificial intelligence for Tic Tac Toe}{8}
-\contentsline {subsection}{\numberline {4.12}App for Android}{9}
-\contentsline {subsection}{\numberline {4.13}Graphical user interface}{9}
+\contentsline {subsection}{\numberline {4.11}Artificial intelligence for Tic Tac Toe}{9}
+\contentsline {subsection}{\numberline {4.12}Special code added for the AI}{9}
+\contentsline {subsection}{\numberline {4.13}App for Android}{10}
+\contentsline {subsection}{\numberline {4.14}Graphical user interface}{10}
 \contentsline {section}{\numberline {5}Testing Tic-Tac-Toe}{10}
 \contentsline {subsection}{\numberline {5.1}checkFull() and the GUI}{10}
 \contentsline {subsection}{\numberline {5.2}checkWinning() by math}{10}
-\contentsline {section}{\numberline {6}Conclusion}{10}
-\contentsline {subsection}{\numberline {6.1}turncounter holding arear for now}{10}
-\contentsline {section}{\numberline {7}Appendix (source code)}{12}
+\contentsline {section}{\numberline {6}Conclusion}{11}
+\contentsline {section}{\numberline {7}Appendix}{12}
