@@ -195,6 +195,12 @@ Few adjustments as to fit and Android mobilephone was added, but few relevant th
 While a functional version was given as part of the assignment, several cosmetic changes were needed to ensure a more user friendly experience. While an earlier version of the GUI was expanded with background music and sounds based upon actions this was removed again due to compiling errors when sharing the game, cause of the specify needed of the file-path, combined with a minor latency issues when loading each sound file.
 	
 	\section{Testing Tic-Tac-Toe}
+	
+Generative testing is single tactic that can be actual for tackling testing situations with a huge series of potential inputs (like all the possible game states for a tic tac toe board).
+Our method to solving this problem was to write a test that played through every possible scenario for a tic tac toe game (starting with an empty board) and confirm that the human player never won.
+Simulating the computer player’s moves is possibly the easiest problem to confront, theoretically, it is the move the computer makes with the given specific board. (For each board, the computer player will make only one move and therefore generate 1 possible game state).
+When the human player’s moves, it happens to be an order to ensure that we are testing all possible game scenarios, we need to make a function that given a board will return a collection of boards, on each of which the human player has played on a different space. (For a board with n empty spaces, the simulated human player will create n possible game possibilities).
+
 	\subsection{checkFull() and the GUI}
 	A complication arose when implementing the GUI, as the GUI did not recognize when a draw was reached, as should be the case with the checkFull() and turnCounter(). By changing different variables methodically backwards from this first call of checkWinning(), to checkFull() and finally turnCounter() the error was located. It was discovered in the way the GUI generated the board compared to the CLI.  The CLI generates the board and calls checkWinning() after player one turn incrementing turnCounter() till a certain value. If the checkResult() has returned a winner by that point, the else-if-statement comes true thus returning the draw statement.  
 	The problem appears to be that the turnCounter() was incrementing one to little when the GUI was launched. Thus an extra call to turnCounter() was launched when the GUI first generates the user interface. This ensured that a draw would be reached for the GUI.
