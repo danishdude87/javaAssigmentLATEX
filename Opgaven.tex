@@ -93,11 +93,11 @@ A method that is to return the number of the player that has placed a marker on 
 \subsection{addMove()}
 addMove() adds the current players number to the position that was clicked on the board.
 \subsection{checkFull()}
-To check if the board is full, I.E. no valid move can be taken, checkFull() needs to return a true/falls if the board is full.
+To check if the board is full, I.E. no valid move can be taken, checkFull() needs to return a true if the board is full and otherwise false.
 \subsection{checkWinning()}
-Method for checking if a player has won the game or a draw is reached. 
+Method for checking if a player has won the game. 
 \subsection{checkSequence()}
-checkSequence takes 3 arguments, a Coordinate, dx, and dy, and uses this to determine if three tiles in a row, column, or diagonal contain the same number aside from zero.
+checkSequence takes 3 arguments, a Coordinate, and 2 integers, and uses this to determine if three tiles in a row, column, or diagonal contain the same number aside from zero.
 \subsection{Artificial intelligence for Tic Tac Toe}
 	A artificial intilligence (AI) opponent that is supposed to be an unbeatable , as it will always win or come to a draw. 
 	\subsection{App for Android}
@@ -106,7 +106,7 @@ checkSequence takes 3 arguments, a Coordinate, dx, and dy, and uses this to dete
 	Since a command line interface version of TTT might be quick to run for troubleshooting, a graphical user interface (GUI) would be implementet to make the game user friendly.
 	
 	\section{Design of Tic-Tac-Toe}
-		Due to the size and scope of the assigment, each group-member tried to develop different the needed parts. The most interesting solutions are added to this report.
+		Due to the size and scope of the assigment, each group-member tried to develop the different needed parts. The most interesting solutions are added to this report.
 			\subsection{Checkboundaries()}
 		It was designed to compare the current x and y values with the xSize and ySize values(these will be the same value in TTT as the board is quadratic), and if they are inside the range 0(inclusive)-size(exclusive) it is valid.
 		\subsection{Shift()}
@@ -116,23 +116,23 @@ checkSequence takes 3 arguments, a Coordinate, dx, and dy, and uses this to dete
 		\subsection{getPlayer()}
 		It returns the value of the board at the position it is passed.
 		\subsection{addMove()}
-		It takes a position and a int as arguments and places the int on the position on the board.
+		It takes a position and an integer as arguments and places the integer on the position on the board.
 		\subsection{checkFull()}
-		Use two for-loops to run though each position on the board and if it encounters a board position that returns a value of zero, the method returns false.
+		Use two for-loops to run though each position on the board and if it encounters a board position that a value of zero, the method returns false.
 		
 		\subsection{checkFull() by turnCounter()}
-		Since the full size of the board is known in advanced at the beginning of a game, and each turn uses one square,  there is a finite amount of turns available in any size of TTT. Therefore the need to check if all squares in the game are used is not relevant, but only a counter of amount of squares i.e. turns possible is needed. 
+		Calls a function that increments a variable each time called. When the variable becomes larger than the amount of players squared, checkFull() returns a true boolean.
 				
 		\subsection{checkWinning()}
-		Methoed to check by a  start positions that could be used by the checkSequence method to check all rows, columns and diagonals on the board. 
+		Method that uses 2 for loops to generate all the start positions to be used by the checkSequence method to check all rows, columns and diagonals on the board. 
 		\subsection{checkWinning() by math}
 		Since each player is represented by a number, it was thought to be mathematically possible to recognize a winning row, column, or diagonal on the board.  This would be done directly in the checkWinning() without the need to call other functions. (i.e checkSequence())The class should have an intrinsic ability to check any board size from three and up in all directions possible for three in a row, and be to return an integer if needed to checkResult(), based on a float value without loss of data.  (i.e only return the integer one if it is 1.0 and not 1.2 etc.)
 		
 		\subsection{checkSequence()}
-		It was designed to check the board at the starting position and then shifting the position using the shift method, and then checking if this new position on the board contains the same value. it will do this twice to check a sequence of three if it finds three of the same number in a sequence then it returns that vale, else it returns zero.
+		It was designed to check the board at the starting position and then shifting the position using the shift method, and then checking if this new position on the board contains the same value. it will do this twice to check a sequence of three if it finds three of the same number in a sequence then it returns that value, else it returns zero.
 		\subsection{Artificial intelligence for Tic Tac Toe}
-		The AI was planned to analyze the board and give each position values based on how good likely it was that it would lead to a win or at least a draw. It was to do this by iterating through the board and for each position look at the row, column and diagonals, where applicable, and add values together and then choose the position that had the highest value. At first the idea was  that recursion should be used to get the AI to look several moves ahead to but initial testing revealed that already while just looking at the next move there was only a few situations where it didn’t guarantee at least a draw.
-		It was only written to work for a two player 3x3 board but could be extended to work on both larger boards and more players, but it might not be possible to guarantee a draw.
+		The AI was planned to analyze the board and give each position values based on how likely it was that it would lead to a win or at least a draw. It was to do this by iterating through the board and for each position look at the row, column and diagonals, where applicable, and add values together and then choose the position that had the highest value. At first the idea was  that recursion should be used to get the AI to look several moves ahead to but initial testing revealed that already while just looking at the next move there was only a few situations where it didn’t guarantee at least a draw.
+		It was only written to work for a two player 3x3 board but could be extended to work on both larger boards and more players.
 		
 		\subsection{App for Android}
 		Make an app.
@@ -154,9 +154,10 @@ checkSequence takes 3 arguments, a Coordinate, dx, and dy, and uses this to dete
 	Starts out with a boolean variable set equal to true, then using 2 for loops runs through each position on the board and checks if the any value at any position is equal to 0. If so, checkFull() returns false.
 	
 \subsection{checkFull() by turnCounter()}
-Each time checkFull() is called it calles turnCounter() and a if-statment checks if the value returned from turnCounter is smaller that the amount of squares in the game. (i,e the amount of turns maximal allowed in the game.) Each time turnCounter() is called it gets incremented from a start point of zero. If turnCounter() passes the if-statment check checkFull() returns true. 
+Each time checkFull() is called it calls turnCounter() and an if-statment checks if the value returned from turnCounter is smaller that the amount of squares in the game. (i,e the amount of turns maximally allowed in the game.) Each time turnCounter() is called the turnCounter variable gets incremented(starting value is zero). If turnCounter() passes the if-statment check checkFull() returns true.
 Since the full size of the board is known in advanced at the beginning of a game, and each turn uses one square,  there is a finite amount of turns available in any size of TTT. Therefore the need to check if all squares in the game are used is not relevant, but only a counter of amount of squares i.e. turns possible is needed. 
-An minor advantage of a turnCounter() based checking system is that even though the size of the TTT-board is of a legible size, a checkFull() that should look at each square in the board. This check sequence would grow with a power of two when the board increases in size, and unless programed with memory, would have to check each square each time. The turnCounter() only needs to increment each time. 
+An minor advantage of a turnCounter() based checking system is that even though the size of the TTT-board is of a legible size, a checkFull() that should look at each square in the board. The runtime of checking the entire board if log(n^2) while using turncounter results in a runtime of log(n).
+
 This is mostly a tour de force in problem finding that for this assignment might not be all that relevant, but non the less a theoretical board for 10.000 players would need checkFull() to go through one hundred million squares and either remember the state of each in a list, or do a full check sequence each time. The turnCounter() would in comparison just need to count to 10.000.
 A problem would arise with the turnCounter() if players were allowed to change the placement of their piece, but since this fundamentally changes the game no further thought were given to this.
 
@@ -164,7 +165,7 @@ A problem would arise with the turnCounter() if players were allowed to change t
 The method uses three different nested for-loops to iterate through all possible starting positions used for checkSequence(). First block checks rows and columns, here for the columns the start positions is not the 2 right most columns, as there aren not enough tiles for a full sequence of three squares. The same goes for rows but  with the two bottom  rows. 
 The other two nested for loops create start positions for checking the diagonals. These are divided into two groups, one for diagonals going up and  one for diagonals going down. Starting positions for the first group is a combination of the ones for rows and columns. The starting positions in neither the bottom two rows or the rightmost two columns. For the second group the top two rows and the rightmost two columns are not needed.
 The method then calls checkSequence() with the generated start positions and dx and dy corresponding to either rows(dx=1 ,dy=0), columns(dx= ,dy=1) etc.
-If the returned value from checkSequence() differes from zero it means that a player has won and checkWinning() returns the intiger.
+If the returned value from checkSequence() differes from zero it means that a player has won and checkWinning() returns the integer.
 
 \subsection{checkWinning() by math}
  The checkWinning() class was implemented as mathematical for-loop which would check each row, column, and diagonally up and down respectively. The main script of each for-loop is quite similar but with  variation for the incrementing and direction of the check. 
@@ -186,7 +187,6 @@ The first is that when the AI goes first it will always place a marker in the mi
 The second is if the human player starts and places a marker in the middle, then all other 8 positions will return a value of -10 and therefore currentValue will never be greater than or equal to bestValue. This results in no move being added to the bestMoveList and a NullPointerException. The solution to this exception was initially chose to set bestValue to -10 and call the generateMove method again, but this resulted in a possible loss if the AI chose to place it’s marker in one of the middle tiles (i.e (1;2)(2;1)(2;3)(3,2). To avoide this scenario coordinates for the 4 corners were added to the bestMovelist if the AI was not starting.
 The last special scenarion was the case where the human player made a move in 1,1, the AI would the mark a corner. Then if the human player then marked the opposite corner the result would be that the AI would force a loss on itself with the standard values (unless the player made a mistake). The solution was to implement a check that would look for this case and then alter bestMoveList to contain 2 different Coordinates.
 
-T
 
 \subsection{Special code added for the AI}
 An added button for starting game vs ai. It sets numplayers equal to 1 instead of taking value from the numberPicker.
@@ -210,11 +210,11 @@ When the human player’s moves, it happens to be an order to ensure that we are
 
 	\subsection{checkFull() and the GUI}
 	A complication arose when implementing the GUI, as the GUI did not recognize when a draw was reached, as should be the case with the checkFull() and turnCounter(). By changing different variables methodically backwards from this first call of checkWinning(), to checkFull() and finally turnCounter() the error was located. It was discovered in the way the GUI generated the board compared to the CLI.  The CLI generates the board and calls checkWinning() after player one turn incrementing turnCounter() till a certain value. If the checkResult() has returned a winner by that point, the else-if-statement comes true thus returning the draw statement.  
-	The problem appears to be that the turnCounter() was incrementing one to little when the GUI was launched. Thus an extra call to turnCounter() was launched when the GUI first generates the user interface. This ensured that a draw would be reached for the GUI.
+	The problem appears to be that the turnCounter() was not incrementing when the GUI was launched. Thus an extra call to turnCounter() was launched when the GUI first generates the user interface. This ensured that a draw would be reached for the GUI.
 	
 	\subsection{checkWinning() by math}
 	A special case was discovered that falsely would result in a win for player 2. It arose when three squares were occupied by player one, two and four. These three would result the same number when checkWining were run as if all three squares were occupied by play two.
-	This was resolved by adding the number two to all terms in the cubicroot equation. No result for 2-6 players could then be equal in any combinations. Subsequent removing the added number two would return the checkWinning() result needed.
+	This was resolved by adding two to all terms in the cubicroot equation. No result for 2-6 players could then be equal in any combinations. Subsequent subtraction of two after taking the cubicroot would return the checkWinning() result needed.
 	
 	\subsection{AI}
 	First issue was trying to get a board passed from TTTGame to use for evaluating the best move for the ai, but board in TTTGame isn’t a int[][] so from TTTGame i couldnt pass the board. Instead had the addMove method in TTTBoard call the aiAddMove method and pass the current board along.
