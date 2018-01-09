@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  9 JAN 2018 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  9 JAN 2018 14:08
 entering extended mode
 **./Opgaven.tex
 (Opgaven.tex
@@ -632,32 +632,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--222
 
  []
 
-<C:/Users/Flindt/Desktop/fig1.png, id=43, 338.76563pt x 338.76563pt>
+<C:/Users/Flindt/Desktop/fig1.png, id=45, 338.76563pt x 338.76563pt>
 File: C:/Users/Flindt/Desktop/fig1.png Graphic file (type png)
 
 <use C:/Users/Flindt/Desktop/fig1.png>
 Package pdftex.def Info: C:/Users/Flindt/Desktop/fig1.png used on input line 22
 7.
 (pdftex.def)             Requested size: 101.63046pt x 101.63046pt.
- [12]
-<C:/Users/Flindt/Desktop/fig2.png, id=47, 338.76563pt x 338.76563pt>
+
+<C:/Users/Flindt/Desktop/fig2.png, id=46, 338.76563pt x 338.76563pt>
 File: C:/Users/Flindt/Desktop/fig2.png Graphic file (type png)
 
 <use C:/Users/Flindt/Desktop/fig2.png>
 Package pdftex.def Info: C:/Users/Flindt/Desktop/fig2.png used on input line 23
 5.
 (pdftex.def)             Requested size: 101.63046pt x 101.63046pt.
-
-<C:/Users/Flindt/Desktop/fig3.png, id=49, 339.51843pt x 338.01282pt>
+ [12 <C:/Users/Flindt/Desktop/fig1.png>]
+<C:/Users/Flindt/Desktop/fig3.png, id=51, 339.51843pt x 338.01282pt>
 File: C:/Users/Flindt/Desktop/fig3.png Graphic file (type png)
 
 <use C:/Users/Flindt/Desktop/fig3.png>
 Package pdftex.def Info: C:/Users/Flindt/Desktop/fig3.png used on input line 24
 0.
 (pdftex.def)             Requested size: 101.85631pt x 101.40462pt.
- Excluding 'comment' comment. [13 <C:/Users/Flindt/Desktop/fig1.png> <C:/Users/
-Flindt/Desktop/fig2.png> <C:/Users/Flindt/Desktop/fig3.png>] Excluding 'comment
-' comment. [14] (Opgaven.aux) ) 
+ Excluding 'comment' comment. [13 <C:/Users/Flindt/Desktop/fig2.png> <C:/Users/
+Flindt/Desktop/fig3.png>]
+Excluding 'comment' comment. [14] (Opgaven.aux) ) 
 Here is how much of TeX's memory you used:
  5292 strings out of 493323
  69247 string characters out of 3139063
@@ -665,18 +665,20 @@ Here is how much of TeX's memory you used:
  8724 multiletter control sequences out of 15000+200000
  15374 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,40p,742b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Flindt\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\Flindt\AppData\
-Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Flin
-dt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:
-\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1
-200.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
-pi600\ecrm1728.pk>
-Output written on Opgaven.pdf (14 pages, 441308 bytes).
+ 39i,8n,40p,743b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Flindt\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Flindt\A
+ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Use
+rs\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.
+pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecrm1000.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
+en\ec\dpi600\ecrm1200.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\jknappen\ec\dpi600\ecrm1728.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr7.pfb>
+Output written on Opgaven.pdf (14 pages, 456350 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
+ 331 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
