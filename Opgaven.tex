@@ -164,13 +164,32 @@ If the returned value from checkSequence() differes from zero it means that a pl
 checkSequence() takes three arguments, a Coordinate and two integers, dx and dy. The method creates an int variable, called checkValue, equal to the board at the coordinate, and if it is equal to zero, returns it. Then using a for loop to run the shift method twice with the given dx and dy arguments. After each loop it checks whether the board at this new position is equal to checkValue. If the are not equal the method returns zero and if they are equal the second loop occurs and a new check happens. Again if they are not equal, zero is returned, but if they are equal it means three tiles in a sequence are the same and checkValue is returned, declaring the winner being the player whom is represented by that integer.
 
 \subsection{Artificial intelligence for Tic Tac Toe}
-DENNE DEL MANGLER AT BLIVER SAT SAMMEN.
+The values used to analyze the board were to start with 100 for a tile that would lead to a win, 90 for a tile that would lead to a loss, and 10 and -10 for tiles containing the AI’s mark and the players mark respectively. Later the lossValue was changed to 79 to avoid edge cases where the AI could win by placing a mark in one spot but choose to instead block the player in another spot.
+There are 4 methods in the AI.java, 4 checkmethods(), moveEvaluate(), GenerateMove(), and aiAddMove().
+The four chec kmethods check each row, column, and if applicable one or both diagonals. These returns a value based on what each tile in that sequence contained, I.E. if it had two AI marks it would return 100 for the winning square.
+MoveEvaluate() simply adds the four check methods together and returns it.
+GenerateMove() runs, using two for-loops, through all nine possible positions on the board, and if that position is free(I.E. the board a that position contains a zero) calls moveEvaluate. The int returned here is assigned to the variable currentValue, which is then checked vs the variable bestValue(). If both have the same value a new XYCoordinate() is created using the current x and y values in the loop. This coordinate is then added to bestMoveList(). If currentValue is greater than bestValue bestMoveList() is cleared and then a new coordinate is added. This is done so that if several possible moves have the same value all are saved in the list and a the end a random move from the list is selected.
+aiAddMove() simply returns the generateMove(), and is called from the addMove() in TTTBoard.
+There are three exceptions to the standard rules that the AI follow.
+The first is that when the AI goes first it will always place a marker in the middle, as this is where there most possible paths that lead to a win for the AI.
+The second is if the human player starts and places a marker in the middle, then all other 8 positions will return a value of -10 and therefore currentValue will never be greater than or equal to bestValue. This results in no move being added to the bestMoveList and a NullPointerException. The solution to this exception was initially chose to set bestValue to -10 and call the generateMove method again, but this resulted in a possible loss if the AI chose to place it’s marker in one of the middle tiles (i.e (1;2)(2;1)(2;3)(3,2). To avoide this scenario coordinates for the 4 corners were added to the bestMovelist if the AI was not starting.
+The last special scenarion was the case where the human player made a move in 1,1, the AI would the mark a corner. Then if the human player then marked the opposite corner the result would be that the AI would force a loss on itself with the standard values (unless the player made a mistake). The solution was to implement a check that would look for this case and then alter bestMoveList to contain 2 different Coordinates.
+
+TODO picture here!
+
+\subsection{Special code added for the AI}
+An added button for starting game vs ai. It sets numplayers equal to 1 instead of taking value from the numberPicker.
+One button that makes the ai take it's move as well a different title depending on whether the AI or human starts.
+Added a method to game.java and TTTgame.java called playerTurn(). This method is used for controlling when the AI move and the board can be pressed to make sure a button only responds when it should.
+In TTTGame.java the TTTgame constructor have been changed to randomize starting player when playing vs the ai(could also be extended to the normal gamemode if wished. Will become part of the third DLC for the game.) and addmove() have been altered to handle playing vs the AI. I.E. if player one took his turn it sets currentplayer = seven aka the AI, and vice versa.
+In TTTBoard.java the TTTBoard contructor was also changed to create a 3x3 board when playing vs AI. addMove() now, if currentplayer is seven, calls aiAddMove() to find the pos at which to add a marker.
+
 
 \subsection{App for Android}
 Few adjustments as to fit and Android mobilephone was added, but few relevant things.
 \subsection{Graphical user interface}
 While a functional version was given as part of the assignment, several cosmetic changes were needed to ensure a more user friendly experience. While an earlier version of the GUI was expanded with background music and sounds based upon actions this was removed again due to compiling errors when sharing the game, cause of the specify needed of the file-path, combined with a minor latency issues when loading each sound file.
-
+	
 	\begin{lstlisting}[language=python]
 	her kan i vise kode som i forklarer.
 	indryk virker fint her.

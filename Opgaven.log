@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  19 DEC 2017 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.18)  21 DEC 2017 10:44
 entering extended mode
 **./Opgaven.tex
 (Opgaven.tex
@@ -619,22 +619,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--76
 
  []
 
-[3] [4] [5] [6] [7]
+[3] [4] [5] [6] [7] [8]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 174.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 195.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [8]
-Excluding 'comment' comment. [9] [10] Excluding 'comment' comment. [11]
+) [9]
+Excluding 'comment' comment. [10] [11] Excluding 'comment' comment. [12]
 (Opgaven.aux) ) 
 Here is how much of TeX's memory you used:
  5704 strings out of 493323
  72795 string characters out of 3139063
- 171561 words of memory out of 3000000
+ 172871 words of memory out of 3000000
  9134 multiletter control sequences out of 15000+200000
  17216 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -649,9 +649,9 @@ s\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.p
 k> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \ecrm1200.pk> <C:\Users\Flindt\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
 n\ec\dpi600\ecrm1728.pk>
-Output written on Opgaven.pdf (11 pages, 112556 bytes).
+Output written on Opgaven.pdf (12 pages, 115323 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
+ 335 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
